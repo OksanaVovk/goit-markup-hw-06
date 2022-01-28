@@ -275,6 +275,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
 
   width: 528px;
   height: 581px;
@@ -294,6 +295,7 @@ body {
 .vector {
   width: 11px;
   height: 11px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-window {
@@ -310,6 +312,128 @@ body {
   background-color: var(--background-color);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-window:hover .vector,
+.close-window:focus .vector {
+  fill: var(--accent-color);
+}
+
+.title-modal {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-label p {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-label {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-label.coment {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label:focus-within .form-input,
+.form-label:hover .form-input {
+  border-color: var(--accent-color);
+}
+
+.form-label:focus-within .icon-form,
+.form-label:hover .icon-form {
+  fill: var(--accent-color);
+}
+
+.icon-form {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input.form-text {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+}
+
+.form-text::placeholder {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-label.checkbox {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.form-link {
+  color: var(--accent-color);
+  margin: 0;
+}
+
+.submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 0;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit:hover,
+.submit:focus {
+  background-color: var(--accent-color-button);
 }
 /* Секції - фон,текст */
 .specifics-list {
