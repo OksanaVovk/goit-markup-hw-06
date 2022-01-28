@@ -57,7 +57,7 @@
                 <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
                 <form class="form" autocomplete="off">
                     <label class="form-label">
-                        <p>Имя</p>
+                        <p class="text-form">Имя</p>
                         <input class="form-input" type="text" name="username" placeholder=" "/>
                         <span>
                             <svg class="icon-form">
@@ -66,7 +66,7 @@
                         </span>
                     </label>
                     <label class="form-label">
-                        <p>Телефон</p>
+                        <p class="text-form">Телефон</p>
                         <input class="form-input" type="tel" name="phone_number" placeholder=" " />
                         <span>
                             <svg class="icon-form">
@@ -75,7 +75,7 @@
                         </span>
                     </label>
                     <label class="form-label">
-                        <p>Почта</p>
+                        <p class="text-form">Почта</p>
                         <input class="form-input" type="email" name="email" placeholder=" " />
                         <span>
                             <svg class="icon-form">
@@ -84,13 +84,19 @@
                         </span>
                     </label>
                     <label class="form-label coment">
-                        <p>Комментарий</p>
-                        <textarea class="form-input form-text" name="feedback" rows="7" placeholder="Введите текст"></textarea>
+                        <p class="text-form">Комментарий</p>
+                        <textarea class="form-input text-coment" name="feedback" rows="7" placeholder="Введите текст"></textarea>
                     </label>
                     <label class="form-label checkbox">
                         <input class="form-input-checkbox" type="checkbox" name="agreement" value="agreement" />
-                        Соглашаюсь с рассылкой и принимаю
-                        <a class="form-link" href="">Условия договора</a>
+                        <p class="text-checkbox">
+                            Соглашаюсь с рассылкой и принимаю
+                            <a class="form-link" href="">Условия договора</a>
+                        </p>
+                        <svg class="icon-choose">
+                            <use href="./images/symbol-defs.svg#icon-choose"></use>
+                        </svg>
+                        
                         
                     </label>
                     <button class="submit" type="submit">Отправить</button>
