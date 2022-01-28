@@ -440,7 +440,7 @@ body {
   border-radius: 4px;
   border: 2px solid var(--title-text-color);
 }
-.submit {
+.button-send {
   display: block;
   width: 200px;
   height: 50px;
@@ -457,8 +457,8 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit:hover,
-.submit:focus {
+.button-send:hover,
+.button-send:focus {
   background-color: var(--accent-color-button);
 }
 /* Секції - фон,текст */
@@ -716,6 +716,7 @@ img {
 .site-footer {
   align-items: flex-start;
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .title-item.footer {
@@ -746,6 +747,58 @@ img {
 .site-item.footer .link:hover,
 .site-item.footer .link:focus {
   background-color: var(--accent-color);
+}
+
+.follow-form {
+  display: flex;
+}
+
+.input-follow {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  background-color: transparent;
+  color: var(--background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.input-follow::placeholder {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.button-follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-follow:hover,
+.button-follow:focus {
+  background-color: var(--accent-color-button);
+}
+.icon-follow {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 /* Сторінка ПОРТФОЛІО */
