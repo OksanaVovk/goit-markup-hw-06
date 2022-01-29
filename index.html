@@ -54,10 +54,10 @@
                     <use href="./images/symbol-defs.svg#icon-dagger"></use>
                 </svg>
                 </button>
-                <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
+                <p class="title-modal">Оставьте свои данные, мы вам перезвоним</p>
                 <form class="form" autocomplete="off">
                     <label class="form-label">
-                        <p class="text-form">Имя</p>
+                        <span class="text-form">Имя</span>
                         <input class="form-input" type="text" name="username" placeholder=" "/>
                         <span>
                             <svg class="icon-form">
@@ -66,7 +66,7 @@
                         </span>
                     </label>
                     <label class="form-label">
-                        <p class="text-form">Телефон</p>
+                        <span class="text-form">Телефон</span>
                         <input class="form-input" type="tel" name="phone_number" placeholder=" " />
                         <span>
                             <svg class="icon-form">
@@ -75,7 +75,7 @@
                         </span>
                     </label>
                     <label class="form-label">
-                        <p class="text-form">Почта</p>
+                        <span class="text-form">Почта</span>
                         <input class="form-input" type="email" name="email" placeholder=" " />
                         <span>
                             <svg class="icon-form">
@@ -84,15 +84,15 @@
                         </span>
                     </label>
                     <label class="form-label coment">
-                        <p class="text-form">Комментарий</p>
+                        <span class="text-form">Комментарий</span>
                         <textarea class="form-input text-coment" name="feedback" rows="7" placeholder="Введите текст"></textarea>
                     </label>
                     <label class="form-label checkbox">
-                        <input class="form-input-checkbox" type="checkbox" name="agreement" value="agreement" />
-                        <p class="text-checkbox">
+                        <input class="form-input-checkbox visually-hidden" type="checkbox" name="agreement" value="agreement" />
+                        <span class="text-checkbox">
                             Соглашаюсь с рассылкой и принимаю
                             <a class="form-link" href="">Условия договора</a>
-                        </p>
+                        </span>
                         <svg class="icon-choose">
                             <use href="./images/symbol-defs.svg#icon-choose"></use>
                         </svg>
@@ -454,7 +454,6 @@
         <svg class="icon-follow">
             <use href="./images/symbol-defs.svg#icon-send"></use>
         </svg>
-        </span>
     </button>
     </form>
 
